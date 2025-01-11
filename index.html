@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MykoDa - Streetwear</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">MykoDa</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,9 +25,7 @@
           <a class="nav-link" href="#stores">Stores</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#products">T-Shirts</a></li>
             <li><a class="dropdown-item" href="#products">Hoodies</a></li>
@@ -38,213 +38,177 @@
   </div>
 </nav>
 
+<!-- Hero Section -->
 <div class="px-4 py-5 my-5 text-center" id="about">
-    <img src="./img/logo.png" alt="" width="200" height="185">
+    <img src="./img/logo.png" alt="MykoDa Logo" width="200" height="185">
     <h1 class="display-5 fw-bold text-body-emphasis">MykoDa</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Welcome to MykoDa, a Ukrainian-born streetwear brand redefining casual fashion since 2025.<br>Inspired by the energy of modern urban culture, we craft premium hoodies and t-shirts that combine bold design with everyday comfort. At MykoDa, every piece tells a story of creativity, resilience, and individuality—designed to empower your unique style.</p>
+      <p class="lead mb-4">
+        Welcome to MykoDa, a Ukrainian-born streetwear brand redefining casual fashion since 2025. Inspired by the energy of modern urban culture, we craft premium hoodies and t-shirts that combine bold design with everyday comfort.
+      </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
             <a href="#products" class="text-decoration-none text-white">Explore</a>
-          </button>
+        </button>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">
             <a href="#footer" class="text-decoration-none text-reset">Contact</a>
-          </button>
+        </button>
+      </div>
+    </div>
+</div>
+
+<!-- Products Section -->
+<div class="container">
+  <div class="text-center my-5">
+    <h1>New Arrivals</h1>
+    <p class="lead">Explore the latest styles and trends</p>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <!-- Product 1 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="products">
+      <div class="my-3 py-3">
+        <h2 class="display-5">SWANS HOODIE BROWN</h2>
+        <p class="lead">Price: $99</p>
+        <p class="lead">Sizes: S, M, L, XL</p>
+        <p class="lead">Available in: Barcelona, Kyiv</p>
+        <button class="btn btn-primary mt-3">
+          <a href="./pages/modal.html" class="text-decoration-none text-white">Buy</a>
+        </button>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./img/SWANS_HOOD_BROWN_back_845d7667-bca1-4654-b6ec-87596d0a4602_800x.webp" alt="SWANS HOODIE BROWN" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 21px 21px 0 0;">
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="products">
+      <div class="my-3 p-3">
+        <h2 class="display-5">PEARL TEE BLUE</h2>
+        <p class="lead">Price: $49</p>
+        <p class="lead">Sizes: S, M, L</p>
+        <p class="lead">Available in: Milano, Barcelona</p>
+        <button class="btn btn-primary mt-3">Buy</button>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="./img/PEARL_TEE_BLUE_back_800x.webp" alt="PEARL TEE BLUE" style="width: 100%; height: 100%; object-fit: cover; border-radius: 21px 21px 0 0;">
       </div>
     </div>
   </div>
+</div>
 
+<!-- Coming Soon Section -->
+<section class="py-5 text-center container" id="comingsoon">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Coming soon...</h1>
+      <p class="lead text-body-secondary">
+        Stay tuned for the latest in style, comfort, and innovation. Our new collection brings you the freshest trends in street fashion, designed to elevate your everyday look.
+      </p>
+    </div>
+  </div>  
 
-
-  
-  
-        <div class="container">
-            <div class="text-center my-5">
-              <h1>New Arrivals</h1>
-              <p class="lead">Explore the latest styles and trends</p>
-            </div>
-          
-            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-              <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="products">
-                <div class="my-3 py-3">
-                  <h2 class="display-5">SWANS HOODIE BROWN</h2>
-                  <p class="lead">Don't thursday, 19:00 and this hoodie give you the same vibe?</p>
-                  <p class="lead">Price: $99</p>
-                  <p class="lead">Sizes: S, M, L, XL</p>
-                  <p class="lead">Available in: Barcelona, Kyiv</p>
-                  <button class="btn btn-primary mt-3">
-                    <a href="./pages/modal.html" class="text-decoration-none text-white">Buy</a>
-                  </button>
-                </div>
-                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <img src="./img/SWANS_HOOD_BROWN_back_845d7667-bca1-4654-b6ec-87596d0a4602_800x.webp" alt="SWANS HOODIE BROWN" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 21px 21px 0 0;">
-                </div>
-              </div>
-              <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="products">
-                <div class="my-3 p-3">
-                  <h2 class="display-5">PEARL TEE BLUE</h2>
-                  <p class="lead">Pearl tee, blue shirt—no pearls included!</p>
-                  <p class="lead">Price: $49</p>
-                  <p class="lead">Sizes: S, M, L</p>
-                  <p class="lead">Available in: Milano, Barcelona</p>
-                  <button class="btn btn-primary mt-3">Buy</button>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <img src="./img/PEARL_TEE_BLUE_back_800x.webp" alt="PEARL TEE BLUE" style="width: 100%; height: 100%; object-fit: cover; border-radius: 21px 21px 0 0;">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <section class="py-5 text-center container" id="comingsoon">
-            <div class="row py-lg-5">
-              <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Coming soon...</h1>
-                <p class="lead text-body-secondary">Streetwear Redefined. <br>
-
-                    Stay tuned for the latest in style, comfort, and innovation. Our new collection brings you the freshest trends in street fashion, designed to elevate your everyday look.</p>
-              </div>
-            </div>  
-
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <div class="card shadow-sm" style="width: 240px;">
-                    <img src="./img/not_my_first.webp" class="card-img-top" alt="NOT A RODEO HOODIE BROWN">
-                    <div class="card-body">
-                      <h5 class="card-title">NOT A RODEO HOODIE BROWN</h5>
-                      <p class="card-text">Do Zoos still exist? Or did they die when I finished school?</p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="col d-flex justify-content-center">
-                  <div class="card shadow-sm" style="width: 240px;">
-                    <img src="./img/the_fine_art.webp" class="card-img-top" alt="FINE ART HOODIE ASH">
-                    <div class="card-body">
-                      <h5 class="card-title">FINE ART HOODIE ASH</h5>
-                      <p class="card-text">My dream for the day I leave this job is to see a video mixtape of my best moments writing product descriptions.</p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="col d-flex justify-content-center">
-                  <div class="card shadow-sm" style="width: 240px;">
-                    <img src="./img/only_do.webp" class="card-img-top" alt="TIME HOODIE GREY MELANGE">
-                    <div class="card-body">
-                      <h5 class="card-title">TIME HOODIE GREY MELANGE</h5>
-                      <p class="card-text">It was 8:34pm in Barcelona when we dropped the hardest hoodie of the year.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-          </section>
-  
-
-          <div class="container px-4 py-5" id="stores">
-            <h2 class="pb-2 border-bottom">Stores</h2>
-        
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/barcelona.webp'); background-size: cover; background-position: center;">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">De la Canuda Street, 37
-                        08002 Barcelona</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="./img/logo.png" alt="logo" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>BARCELONA</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/milano.webp'); background-size: cover; background-position: center;">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Corso di Porta Ticinese, 64
-                        20123 Milano</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="./img/logo.png" alt="logo" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>MILANO</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/kyiv.avif'); background-size: cover; background-position: center;">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Khreshchatyk St, 1, Kyiv</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="./img/logo.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>KYIV</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col d-flex justify-content-center">
+      <div class="card shadow-sm" style="width: 240px;">
+        <img src="./img/not_my_first.webp" class="card-img-top" alt="NOT A RODEO HOODIE BROWN">
+        <div class="card-body">
+          <h5 class="card-title">NOT A RODEO HOODIE BROWN</h5>
+          <p class="card-text">Do Zoos still exist? Or did they die when I finished school?</p>
         </div>
-
-<footer id="footer">
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-            <a class="text-body-secondary" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="./img/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="./img/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="./img/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-      </ul>
-    </footer>
+    </div>
+    <!-- Card 2 -->
+    <div class="col d-flex justify-content-center">
+      <div class="card shadow-sm" style="width: 240px;">
+        <img src="./img/the_fine_art.webp" class="card-img-top" alt="FINE ART HOODIE ASH">
+        <div class="card-body">
+          <h5 class="card-title">FINE ART HOODIE ASH</h5>
+          <p class="card-text">My dream for the day I leave this job is to see a video mixtape of my best moments writing product descriptions.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col d-flex justify-content-center">
+      <div class="card shadow-sm" style="width: 240px;">
+        <img src="./img/only_do.webp" class="card-img-top" alt="TIME HOODIE GREY MELANGE">
+        <div class="card-body">
+          <h5 class="card-title">TIME HOODIE GREY MELANGE</h5>
+          <p class="card-text">It was 8:34pm in Barcelona when we dropped the hardest hoodie of the year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Stores Section -->
+<div class="container px-4 py-5" id="stores">
+  <h2 class="pb-2 border-bottom">Stores</h2>
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <!-- Store 1 -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/barcelona.webp'); background-size: cover; background-position: center;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">De la Canuda Street, 37 08002 Barcelona</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="./img/logo.png" alt="logo" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>BARCELONA</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Store 2 -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/milano.webp'); background-size: cover; background-position: center;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Corso di Porta Ticinese, 64 20123 Milano</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="./img/logo.png" alt="logo" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>MILANO</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Store 3 -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/kyiv.avif'); background-size: cover; background-position: center;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Khreshchatyk St, 1, Kyiv</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="./img/logo.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>KYIV</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="text-muted py-5" id="footer">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 MykoDa. All rights reserved.</p>
+    <p class="mb-0">Follow us on <a href="https://instagram.com/mykoda" class="text-decoration-none">Instagram</a> & <a href="https://twitter.com/mykoda" class="text-decoration-none">Twitter</a>.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz2u+GmBx+2jp2zCBG87jFJsXTIRuY2Ud8Qly9JzAb9hP/iz0JFtB0+t6Z" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-qMTBXMTG7+Z/6JHs8UIAaCRo0T9vhAHeOu7HEBErM2lSglBDs81/8kIVi7DQn9Jm" crossorigin="anonymous"></script>
 </body>
 </html>
